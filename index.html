@@ -78,21 +78,19 @@
 </head>
 
 <body class="font-sans transition-all duration-300">
-
-<!-- Toggleable Theme Picker -->
-<div class="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white px-3 py-2 rounded-full shadow-md">
-  <!-- Palette Icon -->
-  <button id="themeToggle" class="text-xl text-black" title="Select Theme">🎨</button>
-
-  <!-- Color Dots (Initially Hidden) -->
-  <div id="themeMenu" class="flex items-center gap-2 hidden">
-    <div onclick="applyTheme('default')" class="w-5 h-5 rounded-full cursor-pointer" style="background-color: #a855f7;" title="Purple"></div>
-    <div onclick="applyTheme('cyberpunk')" class="w-5 h-5 rounded-full cursor-pointer" style="background-color: #00f0ff;" title="Cyber"></div>
-    <div onclick="applyTheme('minimal')" class="w-5 h-5 rounded-full cursor-pointer" style="background-color: #cccccc;" title="Minimal"></div>
-    <div onclick="applyTheme('neon')" class="w-5 h-5 rounded-full cursor-pointer" style="background-color: #39ff14;" title="Neon"></div>
+  <div class="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white px-3 py-2 rounded-full shadow-md">
+    <button id="themeToggle" class="text-xl text-black" title="Select Theme"><i class="fa-solid fa-palette"></i></button>
+    <div id="themeMenu" class="flex items-center gap-2 hidden">
+      <div onclick="applyTheme('default')" class="w-5 h-5 rounded-full cursor-pointer"
+        style="background-color: #a855f7;" title="Purple"></div>
+      <div onclick="applyTheme('cyberpunk')" class="w-5 h-5 rounded-full cursor-pointer"
+        style="background-color: #00f0ff;" title="Cyber"></div>
+      <div onclick="applyTheme('minimal')" class="w-5 h-5 rounded-full cursor-pointer"
+        style="background-color: #cccccc;" title="Minimal"></div>
+      <div onclick="applyTheme('neon')" class="w-5 h-5 rounded-full cursor-pointer" style="background-color: #39ff14;"
+        title="Neon"></div>
+    </div>
   </div>
-</div>
-
 
   <!-- Hero Section -->
   <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
@@ -114,10 +112,6 @@
     <h2 class="text-4xl font-bold mb-16 text-center accent-text">My Creations Vault</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-      <!-- Project Cards (4) -->
-      <!-- Keep your project cards unchanged -->
-      <!-- Example Card Below -->
-
       <!-- Card 1 -->
       <div class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-105 duration-300">
         <div class="flex items-center mb-4">
@@ -127,12 +121,12 @@
           <h3 class="text-xl font-semibold">AI Tools Directory</h3>
         </div>
         <span class="text-sm badge rounded-full px-3 py-1 mb-4 inline-block">Bolt.new</span>
-        <p class="text-gray-400 mb-6">A categorized directory of the latest AI tools curated for productivity and design.</p>
+        <p class="text-gray-400 mb-6">A categorized directory of the latest AI tools curated for productivity and
+          design.</p>
         <a href="https://Aitools-dev.netlify.app" target="_blank"
           class="block w-full py-2 text-center rounded-xl btn font-semibold transition">View Project</a>
       </div>
 
-      <!-- Repeat for Ping Vault, PayZen, Calculator -->
       <!-- Card 2 -->
       <div class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-105 duration-300">
         <div class="flex items-center mb-4">
@@ -142,7 +136,8 @@
           <h3 class="text-xl font-semibold">Ping Vault</h3>
         </div>
         <span class="text-sm badge rounded-full px-3 py-1 mb-4 inline-block">Base44.app</span>
-        <p class="text-gray-400 mb-6">A secure locker app for notes and links with password protection and auto-expiry.</p>
+        <p class="text-gray-400 mb-6">A secure locker app for notes and links with password protection and auto-expiry.
+        </p>
         <a href="https://app--ping-vault-e9ae59b0.base44.app/Dashboard" target="_blank"
           class="block w-full py-2 text-center rounded-xl btn font-semibold transition">View Project</a>
       </div>
@@ -169,12 +164,25 @@
           </div>
           <h3 class="text-xl font-semibold">Percentage Calculator</h3>
         </div>
-        <span class="text-sm badge rounded-full px-3 py-1 mb-4 inline-block">Bolt.new</span>
-        <p class="text-gray-400 mb-6">A simple and accurate calculator for diploma C20 percentages based on marks.</p>
+        <span class="ext-sm badge rounded-full px-3 py-1 mb-4 inline-block">Bolt.new</span>
+        <p class="text-gray-500 mb-6">A simple and accurate calculator for diploma C20 percentages based on marks.</p>
         <a href="https://diplomac20percentagecalculator.netlify.app/" target="_blank"
           class="block w-full py-2 text-center rounded-xl btn font-semibold transition">View Project</a>
       </div>
 
+      <!-- Card 5 -->
+      <div class="card rounded-2xl p-6 shadow-md hover:shadow-xl transition hover:scale-105 duration-300">
+        <div class="flex items-center mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3" style="background: var(--accent);">
+            <i class="fas fa-file-alt text-black"></i>
+          </div>
+          <h3 class="text-xl font-semibold">CV Insight</h3>
+        </div>
+        <span class="ext-sm badge rounded-full px-3 py-1 mb-4 inline-block">Base44.app</span>
+        <p class="text-gray-500 mb-6">An AI-powered web app to instantly analyze and improve your resume.</p>
+        <a href="https://app--resu-scan-copy-a088c2c5.base44.app/" target="_blank"
+          class="block w-full py-2 text-center rounded-xl btn font-semibold transition">View Project</a>
+      </div>
     </div>
   </section>
 
@@ -193,29 +201,29 @@
   </footer>
 
   <!-- Theme Script -->
-<script>
-  // Apply Theme Logic
-  const applyTheme = (theme) => {
-    document.body.classList.remove('theme-default', 'theme-cyberpunk', 'theme-minimal', 'theme-neon');
-    document.body.classList.add(`theme-${theme}`);
-    document.getElementById('themeMenu').classList.add('hidden'); // Hide after selection
-  };
-  applyTheme('default'); // Set default theme
+  <script>
+    // Apply Theme Logic
+    const applyTheme = (theme) => {
+      document.body.classList.remove('theme-default', 'theme-cyberpunk', 'theme-minimal', 'theme-neon');
+      document.body.classList.add(`theme-${theme}`);
+      document.getElementById('themeMenu').classList.add('hidden'); // Hide after selection
+    };
+    applyTheme('default'); // Set default theme
 
-  // Toggle Visibility of Colors
-  document.getElementById('themeToggle').addEventListener('click', () => {
-    document.getElementById('themeMenu').classList.toggle('hidden');
-  });
+    // Toggle Visibility of Colors
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      document.getElementById('themeMenu').classList.toggle('hidden');
+    });
 
-  // Optional: Close if clicked outside
-  document.addEventListener('click', (e) => {
-    const btn = document.getElementById('themeToggle');
-    const menu = document.getElementById('themeMenu');
-    if (!btn.contains(e.target) && !menu.contains(e.target)) {
-      menu.classList.add('hidden');
-    }
-  });
-</script>
+    // Optional: Close if clicked outside
+    document.addEventListener('click', (e) => {
+      const btn = document.getElementById('themeToggle');
+      const menu = document.getElementById('themeMenu');
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
 
 
 
@@ -230,4 +238,5 @@
   </script>
 
 </body>
+
 </html>
